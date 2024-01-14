@@ -1,0 +1,65 @@
+CARLA_CONFIG:
+  NUM_OF_VEHICLES: 100
+  AGENT: Behavior
+  BEHAVIOR: normal
+
+AGENT_CONFIG: 
+  SPAWN_ID: 10
+  DEST_ID: 30
+  BLUEPRINT: vehicle.lincoln.mkz_2017
+
+SENSOR_CONFIG:
+  RGB:
+    TRANSFORM: {location: [0, 0, 1.8], rotation: [0, 0, 0]}
+    BLUEPRINT: sensor.camera.rgb
+    ATTRIBUTE: {image_size_x: 1080, image_size_y: 720, fov: 90}
+
+  DEPTH_RGB:
+    TRANSFORM: { location: [ 0, 0, 1.8 ], rotation: [ 0, 0, 0 ] }
+    BLUEPRINT: sensor.camera.depth
+    ATTRIBUTE: { image_size_x: 1080, image_size_y: 720, fov: 90 }
+
+  LIDAR:
+    TRANSFORM: {
+      location: [ 0, 0, 1.8 ],
+      rotation: [ 0, 0, 0 ]
+    }
+    BLUEPRINT: sensor.lidar.ray_cast
+    ATTRIBUTE: {
+      range: 120,
+      rotation_frequency: 10,
+      upper_fov: 3,
+      lower_fov: -25,
+      points_per_second: 1300000,
+      channels: 64
+    }
+
+  SEMANTIC_LIDAR:
+    TRANSFORM: {
+      location: [ 0, 0, 1.8 ],
+      rotation: [ 0, 0, 0 ]
+    }
+    BLUEPRINT: sensor.lidar.ray_cast_semantic
+    ATTRIBUTE: {
+      range: 120,
+      rotation_frequency: 10,
+      upper_fov: 3,
+      lower_fov: -25,
+      points_per_second: 1300000,
+      channels: 64
+    }
+
+FILTER_CONFIG:
+  ACTOR_FILTER: vehicle.*
+  MAX_RENDER_DEPTH_IN_METERS: 50
+  MIN_VISIBLE_VERTICES_FOR_RENDER: 3
+  MAX_OUT_VERTICES_FOR_RENDER: 5
+
+DISPLAY_CONFIG:
+  WIDTH: 1080
+  HEIGHT: 720
+
+SAVE_CONFIG:
+  ROOT_PATH: data/00
+
+MAP: Town10HD
