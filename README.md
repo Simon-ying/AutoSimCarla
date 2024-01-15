@@ -2,9 +2,9 @@
 
 *A KITTI like Autonomous Driving Dataset simulating by Carla*
 
-![](examples\example.gif)
-
-
+<p align='center'>
+    <img src="/examples/example.gif" alt="drawing" width="800"/>
+</p>
 
 ## Preparation
 
