@@ -2,7 +2,7 @@
 
 *A KITTI like Autonomous Driving Dataset simulating by Carla*
 
-![](D:\github_files\AutoSimCarla\examples\example.gif)
+![](examples\example.gif)
 
 
 
