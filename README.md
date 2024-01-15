@@ -11,7 +11,7 @@
 - Install [CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#carla-installation) and related packages shown in `__init__.py`
 - change CARLA path according to your installation.
 
-![](examples\carla_path.png)
+![](examples/carla_path.png)
 
 
 
