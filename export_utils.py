@@ -181,8 +181,7 @@ def save_rgb_image(filename, image):
     im.save(filename)
 
 def save_objects(kitti_path, carla_path, all_path, lidar_path, depth_data, agent, object_data, intrinsic, extrinsic, world_2_lidar):
-    # TODO: add environment objects
-    # environment_actors = world.world.get_environment_objects(carla.CityObjectLabel.Any)
+    # TODO: add identification
     depth_image = depth2array(depth_data)
     all_objects = []
     visible_objects = []

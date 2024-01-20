@@ -137,6 +137,8 @@ def game_loop(args):
                 vehicles_list.append(response.actor_id)
 
         all_vehicle_actors = world.world.get_actors(vehicles_list)
+        environment_actors = world.world.get_environment_objects(carla.CityObjectLabel.Vehicles)
+
         # Set automatic vehicle lights update if specified
         """
         for actor in all_vehicle_actors:
@@ -207,7 +209,20 @@ def game_loop(args):
                     temp_actor["velocity"] = obj.get_velocity()
                     temp_actor["acceleration"] = obj.get_acceleration()
                     temp_actor["angular_velocity"] = obj.get_angular_velocity()
+                    temp_actor["id"] = obj.id
                     vehicle_actors.append(temp_actor)
+                for obj in environment_actors:
+                    temp_actor = {}
+                    temp_actor["transform"] = obj.transform
+                    temp_actor["bounding_box"] = obj.bounding_box
+                    temp_actor["type"] = "Car"
+                    temp_actor["velocity"] = carla.Vector3D(0., 0., 0.)
+                    temp_actor["acceleration"] = carla.Vector3D(0., 0., 0.)
+                    temp_actor["angular_velocity"] = carla.Vector3D(0., 0., 0.)
+                    temp_actor["id"] = obj.id
+                    vehicle_actors.append(temp_actor)
+
+
                 agent_player = {}
                 agent_player["transform"] = world.player.get_transform()
                 # save ground truth

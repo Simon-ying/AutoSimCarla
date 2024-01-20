@@ -4,7 +4,7 @@ CARLA_CONFIG:
   BEHAVIOR: normal
 
 AGENT_CONFIG: 
-  SPAWN_ID: 10
+  SPAWN_ID: 0
   DEST_ID: 30
   BLUEPRINT: vehicle.lincoln.mkz_2017
 
