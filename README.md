@@ -26,6 +26,6 @@ modify `config.yaml`
 ```bash
 python automatic_control.py # Generate KITTI like dataset
 
-python visulization.py # Visualization
+python visulization.py # Visualization and also an example for data processing
 ```
 
