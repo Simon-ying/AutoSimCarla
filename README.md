@@ -8,7 +8,7 @@
 
 ## Preparation
 
-- Install [CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#carla-installation) and related packages shown in `__init__.py`
+- Install [CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#carla-installation) and related packages in requirements.txt.
 - change CARLA path according to your installation.
 
 ![](examples/carla_path.png)
@@ -29,3 +29,6 @@ python automatic_control.py # Generate KITTI like dataset
 python visulization.py # Visualization and also an example for data processing
 ```
 
+<!-- ## References
+
+[Lidar data with motion distortion](http://asrl.utias.utoronto.ca/datasets/mdlidar/index.html) -->

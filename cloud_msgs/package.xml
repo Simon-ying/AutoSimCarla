@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- 根标记文件 -->
+<package> 
+  <!-- package name -->
+  <name>cloud_msgs</name>
+  <!-- 版本号 -->
+  <version>1.0.0</version>
+  <!-- 内容描述 -->
+  <description>The cloud_msgs package contains messages.</description>
+  <!-- 维护者 -->
+  <maintainer email="xxx@xxx.xxx">Zhuoye Ying</maintainer>
+  <!-- 许可证 -->
+  <license>BSD</license>
+
+  <!-- 编译构建工具，通常为catkin -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- 编译依赖项 -->
+  <!-- 运行和生成message所需的依赖项 -->
+  <build_depend>message_runtime</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <!-- nav_msgs: msgs interact with the navigation stack. -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <!-- 运行依赖项 -->
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>message_generation</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+
+  <export>
+
+  </export>
+</package>
