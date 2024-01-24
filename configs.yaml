@@ -4,7 +4,7 @@ CARLA_CONFIG:
   BEHAVIOR: normal
 
 AGENT_CONFIG: 
-  SPAWN_ID: 0
+  SPAWN_ID: 50
   DEST_ID: 30
   BLUEPRINT: vehicle.lincoln.mkz_2017
 
@@ -60,6 +60,6 @@ DISPLAY_CONFIG:
   HEIGHT: 720
 
 SAVE_CONFIG:
-  ROOT_PATH: data/00
+  ROOT_PATH: ../data/00
 
 MAP: Town10HD

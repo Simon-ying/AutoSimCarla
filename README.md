@@ -29,3 +29,6 @@ python automatic_control.py # Generate KITTI like dataset
 python visulization.py # Visualization and also an example for data processing
 ```
 
+<!-- ## References
+
+[Lidar data with motion distortion](http://asrl.utias.utoronto.ca/datasets/mdlidar/index.html) -->
