@@ -8,7 +8,7 @@
 
 ## Preparation
 
-- Install [CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#carla-installation) and related packages shown in `__init__.py`
+- Install [CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#carla-installation) and related packages in requirements.txt.
 - change CARLA path according to your installation.
 
 ![](examples/carla_path.png)
