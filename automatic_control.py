@@ -137,8 +137,10 @@ def game_loop(args):
                 vehicles_list.append(response.actor_id)
 
         all_vehicle_actors = world.world.get_actors(vehicles_list)
-        environment_actors = world.world.get_environment_objects(carla.CityObjectLabel.Vehicles)
-
+        vehicle_lables = [carla.CityObjectLabel.Car, carla.CityObjectLabel.Truck, carla.CityObjectLabel.Bus]
+        environment_actors = []
+        for lable in vehicle_lables:
+            environment_actors.extend(world.world.get_environment_objects(carla.CityObjectLabel.Car)) # carla.CityObjectLabel.Vehicles 0.9.13
         # Set automatic vehicle lights update if specified
         """
         for actor in all_vehicle_actors:

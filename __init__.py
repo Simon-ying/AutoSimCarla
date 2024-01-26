@@ -32,7 +32,7 @@ import re
 # -- Find CARLA module ---------------------------------------------------------
 # ==============================================================================
 try:
-    sys.path.append('G:\Carla\WindowsNoEditor\PythonAPI\carla\dist\carla-0.9.13-py3.7-win-amd64.egg')
+    sys.path.append('G:\CARLA_0.9.15\WindowsNoEditor\PythonAPI\carla\dist\carla-0.9.15-py3.7-win-amd64.egg')
 except IndexError:
     pass
 
@@ -40,7 +40,7 @@ except IndexError:
 # -- Add PythonAPI for release mode --------------------------------------------
 # ==============================================================================
 try:
-    sys.path.append('G:\Carla\WindowsNoEditor\PythonAPI\carla')
+    sys.path.append('G:\CARLA_0.9.15\WindowsNoEditor\PythonAPI\carla')
 except IndexError:
     pass
 
